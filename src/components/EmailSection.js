@@ -55,7 +55,7 @@ const EmailSection = () => {
           </h3>
       
         <p className="text-[#ADB7BE] mb-4 max-w-md">
-          Let's collaborate! Reach out to discuss projects, opportunities, or just to say hello. I'm excited to connect and explore potential collaborations in the world of web development and beyond.
+          {"!Let's collaborate! Reach out to discuss projects, opportunities, or just to say hello. I'm excited to connect and explore potential collaborations in the world of web development and beyond."}
         </p>
       </div>
 
