@@ -1,14 +1,15 @@
 import nodemailer from "nodemailer";
 
-import connectDB from "@/utils/connectDB";
-import { Mail } from "@/models/mail";
+// import connectDB from "@/utils/connectDB";
+// import { Mail } from "@/models/mail";
 
 export async function POST(req) {
   try {
     const body = await req.json();
     
     const { name, email, subject, message } = body;
-    
+    console.log("received:", name, email, subject, message);
+
     const transporter = nodemailer.createTransport({
       service: "Gmail",
       auth: {
