@@ -18,7 +18,7 @@ const HeroSection = () => {
         >
          <h1 className="text-white mb-4 text-3xl sm:text-4xl lg:text-6xl lg:leading-normal font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-br from-pink-900 to-purple-300">
-              Hello,{"!I'm"}
+              Hello, {"I'm"}
             </span>
             <br></br>
             <TypeAnimation
@@ -73,7 +73,7 @@ const HeroSection = () => {
           <div className="rounded-full bg-[#000f2e] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
             <Image
               src="/images/hero-img1.png"
-              alt="hero image"
+              alt="nina mansouri"
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               width={300}
               height={300}
