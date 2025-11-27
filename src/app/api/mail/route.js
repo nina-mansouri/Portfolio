@@ -7,7 +7,7 @@ export async function POST(req) {
   try {
     const body = await req.json();
     
-    const { name, email, subject, message } = body;
+    const { name, email, subject, message } = body.formData;
     console.log("received:", name, email, subject, message);
 
     const transporter = nodemailer.createTransport({
