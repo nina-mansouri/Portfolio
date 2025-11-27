@@ -7,7 +7,7 @@ export async function POST(req) {
   try {
     const body = await req.json();
     
-    const { name, email, subject, message } = body.formData;
+    const { name, email, subject, message } = body;
     
     const transporter = nodemailer.createTransport({
       service: "Gmail",
