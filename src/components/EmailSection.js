@@ -22,7 +22,7 @@ const EmailSection = () => {
 
     setSending(true);
 
-    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/mail`, {
+    const res = await fetch("/api/mail", {
       method: "POST",
       body: JSON.stringify( {formData} ),
       headers: { "Content-Type": "application/json" },

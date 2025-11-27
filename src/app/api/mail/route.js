@@ -23,11 +23,11 @@ export async function POST(req) {
       subject: `${name}`,
       text: `name = ${name}, email = ${email}, message = ${message}`,
     };
-    console.log("mail options:", mailOptions)
+    // console.log("mail options:", mailOptions)
     await transporter.sendMail(mailOptions);
 
-    connectDB();
-    const mail = await Mail.create(body.formData);
+    // connectDB();
+    // const mail = await Mail.create(body.formData);
     return new Response(
       JSON.stringify({ success: true, message: "Email sent successfully" }),
       { status: 201 }
